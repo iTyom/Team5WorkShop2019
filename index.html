@@ -37,10 +37,18 @@
             $(window).on('scroll', doAnimations);
             $(window).trigger('scroll');
 
+            $(document).ready(function(){
+                function scrollDown() {
+                $('#scroll-d').effect('bounce', {times:3}, 3000, scrollDown);
+                }
+                scrollDown();
+            });
+
         });
     </script>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <link rel="stylesheet" href="css/contact.css">
 
     <style>
@@ -543,6 +551,28 @@
           height: 100%;
           text-align: center;
         }
+        #scroll-d {
+          position: absolute;
+          bottom: 1%;
+          left: 50%;
+          color: #F0FFFF;
+          font-size: 6em;
+          font-weight: 200;
+        }
+
+        // Animations
+        @keyframes bounce {
+          to {
+            transform: rotate(45deg) translateY(2rem) translateX(2rem);
+            opacity: 0;
+          }
+        }
+        @keyframes bounce {
+          to {
+            transform: translateX(2rem);
+            opacity: 0;
+          }
+        }
     </style>
 
 </head>
@@ -551,6 +581,10 @@
 
     <div class="header">
         <img src="Header.png">
+        <!-- Scrolling Arrow
+        <div id="scroll-d">
+            <i class="fa fa-angle-down"></i>
+        </div>-->
     </div>
 
     <div class="root">
