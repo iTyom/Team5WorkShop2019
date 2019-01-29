@@ -2,7 +2,7 @@
 <html>
 
 <head>
-
+    <title>Agence Esperluette</title>
     <script src="jquery-3.3.1.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -46,12 +46,38 @@
 
         });
     </script>
-
+    
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <link rel="stylesheet" href="css/contact.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
 
     <style>
+        
+        @font-face {
+           font-family: Biko;
+           font-style: normal;
+           src: url(Biko.otf);
+           
+        }
+        
+        body{
+            
+            font-family: Biko;
+        }
+        
+        h1{
+            margin-top: .5em;
+            color: #FFF;
+            text-decoration: underline;
+            text-underline-position: under;
+        }
+        
+        h5{
+            font-style: italic;
+        }
+        
         .container {
             display: block;
         }
@@ -62,33 +88,83 @@
         }
 
         .leftFloat {
-            display: block;
+            display: inline-block;
             position: relative;
             float: left;
             height: 200px;
-            width: 20%;
+            width: 200px;
             margin-bottom: 1em;
         }
 
         .rightFloat {
-            display: block;
+            display: inline-block;
             position: relative;
             float: right;
             height: 200px;
-            width: 20%;
+            width: 200px;
             margin-bottom: 1em;
         }
 
-        .description {
+        .descriptionLeft {
+            display: inline-block;
             position: relative;
             color: #FFF;
+            margin-top: 1em;
+            padding-left: 1em;
+            float: left;
+            text-align: left;
+            
         }
-
+        
+        .descriptionRight {
+            display: inline-block;
+            position: relative;
+            color: #FFF;
+            margin-top: 1em;
+            padding-right: 1em;
+            float : right;
+            text-align: right;
+            
+        }
+        
         .arround{
             display: block;
             width: 100%;
             height: 200px;
             margin-bottom: 1em;
+        }
+        
+        .barre {
+            display: block;
+            margin: 1em;
+        }
+
+        body {
+            background-color: #131313;
+        }
+
+        .header {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+
+        .block {
+            position: relative;
+            height: 200px;
+            line-height: 5em;
+            width: 200px;
+            background: #464646;
+            color: #fdfdfd;
+            text-align: center;
+            margin: 1em auto;
+            text-shadow: 0 0 1px #333;
         }
 
         a.animated-button.sandy-two {
@@ -179,39 +255,6 @@
             -moz-transition: all 1s ease;
             -o-transition: all 1s ease;
             transition: all 1s ease;
-        }
-
-        .barre {
-            display: block;
-            margin: 1em;
-        }
-
-        body {
-            background-color: #131313;
-        }
-
-        .header {
-            display: block;
-            width: 100%;
-            height: 100%;
-        }
-
-        img {
-            width: 100%;
-            height: 100%;
-            display: block;
-        }
-
-        .block {
-            position: relative;
-            height: 200px;
-            line-height: 5em;
-            width: 200px;
-            background: #464646;
-            color: #fdfdfd;
-            text-align: center;
-            margin: 1em auto;
-            text-shadow: 0 0 1px #333;
         }
 
         .animatable {
@@ -479,7 +522,7 @@
 
         .wrapperVignette {
           display: flex;
-          height:410px;
+          height:1080px;
           width: 100%;
           margin-top: 90px;
         }
@@ -492,8 +535,8 @@
         }
 
         .vignette {
-          width: 260px;
-          height: 350px;
+          width: 360px;
+          height: 500px;
           background-color: black;
           position: relative;
           cursor: pointer;
@@ -501,7 +544,7 @@
           flex-direction: column;
           justify-content: center;
           align-items: center;
-
+          padding-bottom: 20px;
         }
 
         /* .colorBarre {
@@ -545,34 +588,66 @@
         .txtVignette {
           color: white;
           display: flex;
+          flex-direction: column;
           justify-content: center;
           align-items: center;
           width: 80%;
           height: 100%;
           text-align: center;
         }
-        #scroll-d {
-          position: absolute;
-          bottom: 1%;
-          left: 50%;
-          color: #F0FFFF;
-          font-size: 6em;
-          font-weight: 200;
+
+        txtVignette {
+          color: white;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 80%;
+          height: 100%;
+          text-align: center;
         }
 
-        // Animations
-        @keyframes bounce {
-          to {
-            transform: rotate(45deg) translateY(2rem) translateX(2rem);
-            opacity: 0;
-          }
+        .titreVignette {
+          margin: 5px;
+          text-align: left;
+          color: red;
+          font-family: 'Futura';
         }
-        @keyframes bounce {
-          to {
-            transform: translateX(2rem);
-            opacity: 0;
-          }
+
+        .wrapperCustomers {
+          height: 800px;
         }
+
+        .customersFlex {
+          height: 40%;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+        }
+
+        .customer {
+          width: 150px;
+          -webkit-transition: -webkit-filter 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
+          transition: -webkit-filter 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
+          -o-transition: filter 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
+          transition: filter 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
+          transition: filter 0.8s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-filter 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
+          -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+        }
+
+        .customer:hover {
+          cursor: pointer;
+          -webkit-transition: -webkit-filter 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
+          transition: -webkit-filter 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
+          -o-transition: filter 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
+          transition: filter 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
+          transition: filter 0.8s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-filter 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
+          -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+        }
+
+
     </style>
 
 </head>
@@ -597,51 +672,100 @@
                 </div>
             </div>
             <div class="content">
-                <div class="equipe">
-                    <div class="arround">
-                        <div class="leftFloat">
-                            <div class="block animatable bounceInLeft">Photo 1</div>
-                        </div>
-                    </div>
-                    <div class="arround">
-                        <div class="rightFloat">
-                            <div class="block animatable bounceInRight">Photo 2</div>
-                        </div>
-                    </div>
-                    <div class="arround">
-                        <div class="leftFloat">
-                            <div class="block animatable bounceInLeft">Photo 3</div>
-                        </div>
-                    </div>
-                    <div class="arround">
-                        <div class="rightFloat">
-                            <div class="block animatable bounceInRight">Photo 4</div>
-                        </div>
-                    </div>
-                    <div class="arround">
-                        <div class="leftFloat">
-                            <div class="block animatable bounceInLeft">Photo 5</div>
-                        </div>
-                    </div>
-                    <div class="arround">
-                        <div class="rightFloat">
-                            <div class="block animatable bounceInRight">Photo 6</div>
-                        </div>
-                    </div>
-                    <div class="arround">
-                        <div class="leftFloat">
-                            <div class="block animatable bounceInLeft">Photo 7</div>
-                        </div>
-                    </div>
-                    <div class="arround">
-                        <div class="rightFloat">
-                            <div class="block animatable bounceInRight">Photo 8</div>
-                        </div>
-                    </div>
-
-                </div>
                 <div class="valeur">
                 </div>
+                <div class="equipe">
+                    <div class="crew"><h1>L'Equipe</h1><br>
+                    <div class="arround">
+                        <!--Guillaume Lambin, Directeur-->
+                        <div class="leftFloat">
+                            <div class="block animatable bounceInLeft"><img src="pict/Guillaume.png"></div>
+                        </div>
+                        <div class="descriptionLeft">
+                            <h2>Guillaume LAMBIN</h2>
+                            <h4>Directeur de l'agence</h4>
+                            <br><h5>"..."</h5>
+                        </div>
+                    </div>
+                    <div class="arround">
+                        <!--Riri Maumus, Res. market et com-->
+                        <div class="rightFloat">
+                            <div class="block animatable bounceInRight"><img src="pict/Auriane.png"></div>
+                        </div>
+                        <div class="descriptionRight">
+                            <h2>Orianne MAUMUS</h2>
+                            <h4>Responsable en marketing et comunication</h4>
+                            <br><h5>"Si le marketing était un animal...<br>&emsp;...ce serait un poulpe."</h5>
+                        </div>
+                    </div>
+                    <div class="arround">
+                        <!--Amandine Dumas, Assist. market et com -->
+                        <div class="leftFloat">
+                            <div class="block animatable bounceInLeft"><img src="pict/Amandine.png"></div>
+                        </div>
+                        <div class="descriptionLeft">
+                            <h2>Amandine DUMAS</h2>
+                            <h4>Assistante en marketing et comunication</h4>
+                            <br><h5>"Communiquer, c'est créer."</h5>
+                        </div>
+                    </div>
+                    <div class="arround">
+                        <!--Nicolas Miquel, Dir Artistique-->
+                        <div class="rightFloat">
+                            <div class="block animatable bounceInRight"><img src="pict/Nicolas.png"></div>
+                        </div>
+                        <div class="descriptionRight">
+                            <h2>Nicolas MIQUEL</h2>
+                            <h4>Directeur artistique</h4>
+                            <br><h5>"Le contenu vient avant le design.<br>Un design sans contenu n'est pas un design, c'est une décoration."</h5>
+                        </div>
+                    </div>
+                    <div class="arround">
+                        <!--Ludivine Clair, resp audiovisuel-->
+                        <div class="leftFloat">
+                            <div class="block animatable bounceInLeft"><img src="pict/Ludivine.png"></div>
+                        </div>
+                        <div class="descriptionLeft">
+                            <h2>Ludivine CLAIR</h2>
+                            <h4>Responsable en audiovisuel</h4>
+                            <br><h5>"La vie est belle."</h5>
+                        </div>
+                    </div>
+                    <div class="arround">
+                        <!--Tom Ruscelli, Dev-->
+                        <div class="rightFloat">
+                            <div class="block animatable bounceInRight"><img src="pict/Tom.png"></div>
+                        </div>
+                        <div class="descriptionRight">
+                            <h2>Tom RUSCELLI</h2>
+                            <h4>Responsable des développeurs</h4>
+                            <br><h5>"La cuillère n'existe pas."</h5>
+                        </div>
+                    </div>
+                    <div class="arround">
+                        <!--Dylan Andre, Dev-->
+                        <div class="leftFloat">
+                            <div class="block animatable bounceInLeft"><img src="pict/Dylan.png"></div>
+                        </div>
+                        <div class="descriptionLeft">
+                            <h2>Dylan ANDRE</h2>
+                            <h4>Développeur</h4>
+                            <br><h5>"Omaewa mouuu shindeiru...<br><br>&emsp;NANI!?"</h5>
+                        </div>
+                    </div>
+                    <div class="arround">
+                        <!--Moi, le meilleur évidemment-->
+                        <div class="rightFloat">
+                            <div class="block animatable bounceInRight"><img src="pict/Batiste.png"></div>
+                        </div>
+                        <div class="descriptionRight">
+                            <h2>Baptiste PROUST</h2>
+                            <h4>Développeur</h4>
+                            <br><h5>"Et merci bien pour le poisson !"</h5>
+                        </div>
+                    </div>
+                </div>
+                    </div>
                 <div class="orga">
                 </div>
                 <div class="engagement">
@@ -659,6 +783,7 @@
             <img src="020.jpg"></img>
           </div>
           <div class="txtVignette">
+            <div class="titreVignette">Titre</div>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit,
             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </div>
@@ -670,6 +795,7 @@
             <img src="020.jpg"></img>
           </div>
           <div class="txtVignette">
+            <div class="titreVignette">Titre</div>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit,
             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </div>
@@ -680,6 +806,7 @@
             <img src="020.jpg"></img>
           </div>
           <div class="txtVignette">
+            <div class="titreVignette">Titre</div>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit,
             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </div>
@@ -691,11 +818,33 @@
             <img src="020.jpg"></img>
           </div>
           <div class="txtVignette">
+            <div class="titreVignette">Titre</div>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit,
             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </div>
           <div class="colorBarre"></div>
 
+        </div>
+      </div>
+    </div>
+    <div class="wrapperCustomers">
+      <div class="customersFlex">
+        <div class="customer">
+          <img src="atos.png"></img>
+        </div>
+        <div class="customer">
+          <img src="atos.png"></img>
+        </div>
+        <div class="customer">
+          <img src="atos.png"></img>
+        </div>
+      </div>
+      <div class="customersFlex" style="justify-content: space-evenly;">
+        <div class="customer">
+          <img src="atos.png"></img>
+        </div>
+        <div class="customer">
+          <img src="atos.png"></img>
         </div>
       </div>
     </div>
@@ -710,27 +859,31 @@
             <div class="row">
                 <div class="col-sm-4"></div>
                 <div class="col-sm-4">
-                    <section id="hire">
-                        <h1>Contact Me</h1>
-                        <form>
-                            <div class="field name-box">
-                                <input type="text" id="name" placeholder="Qui etes-vous ?"/>
-                                <label for="name">Name</label>
-                                <span class="ss-icon">check</span>
+                    <div class="well" style="margin-top: 10%;">
+                        <h3>Contactez-nous !</h3>
+                        <form role="form" id="contactForm" data-toggle="validator" class="shake">
+                            <div class="row">
+                                <div class="form-group col-sm-6">
+                                    <label for="name" class="h4">Name</label>
+                                    <input type="text" class="form-control" id="name" placeholder="Enter name" required data-error="NEW ERROR MESSAGE">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                                <div class="form-group col-sm-6">
+                                    <label for="email" class="h4">Email</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+                                    <div class="help-block with-errors"></div>
+                                </div>
                             </div>
-                            <div class="field email-box">
-                                <input type="text" id="email" placeholder="name@email.com"/>
-                                <label for="email">Email</label>
-                                <span class="ss-icon">check</span>
+                            <div class="form-group">
+                                <label for="message" class="h4 ">Message</label>
+                                <textarea id="message" class="form-control" rows="5" placeholder="Enter your message" required></textarea>
+                                <div class="help-block with-errors"></div>
                             </div>
-                            <div class="field msg-box">
-                                <textarea id="msg" rows="4" placeholder="Entrez votre message..."/></textarea>
-                                <label for="msg">Msg</label>
-                                <span class="ss-icon">check</span>
-                            </div>
-                            <input class="button" type="submit" value="Send" />
+                            <button type="submit" id="form-submit" class="btn btn-success btn-lg pull-right ">Submit</button>
+                            <div id="msgSubmit" class="h3 text-center hidden"></div>
+                            <div class="clearfix"></div>
                         </form>
-                    </section>
+                    </div>
                 </div>
                 <div class="col-sm-4"></div>
             </div>
@@ -738,4 +891,5 @@
     </div>
 
 </body>
+
 </html>
