@@ -510,6 +510,135 @@
             -o-animation-name: bounceInLeft;
             animation-name: bounceInLeft;
         }
+
+        .wrapperVignette {
+          display: flex;
+          height:1080px;
+          width: 100%;
+          margin-top: 90px;
+        }
+
+        .vignetteFlex {
+          flex: 1;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+        }
+
+        .vignette {
+          width: 360px;
+          height: 500px;
+          background-color: black;
+          position: relative;
+          cursor: pointer;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          padding-bottom: 20px;
+        }
+
+        /* .colorBarre {
+          width: 100%;
+          height: 3px;
+          background-color: yellow;
+          position: absolute;
+          bottom: 0px;
+          cursor: pointer;
+        } */
+
+        .imgVignette {
+          width: 100%;
+          height: 140px;
+          top: 0;
+          left: 0%;
+          height: 50%;
+          width: 100%;
+          background-size: 85% auto;
+          background-position: center center;
+          background-repeat: no-repeat;
+          -webkit-transition: -webkit-filter 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
+          transition: -webkit-filter 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
+          -o-transition: filter 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
+          transition: filter 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
+          transition: filter 0.8s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-filter 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
+          -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+        }
+
+        .imgVignette:hover {
+          -webkit-transition: -webkit-filter 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
+          transition: -webkit-filter 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
+          -o-transition: filter 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
+          transition: filter 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
+          transition: filter 0.8s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-filter 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
+          -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+        }
+
+        .txtVignette {
+          color: white;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 80%;
+          height: 100%;
+          text-align: center;
+        }
+
+        txtVignette {
+          color: white;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 80%;
+          height: 100%;
+          text-align: center;
+        }
+
+        .titreVignette {
+          margin: 5px;
+          text-align: left;
+          color: red;
+          font-family: 'Futura';
+        }
+
+        .wrapperCustomers {
+          height: 800px;
+        }
+
+        .customersFlex {
+          height: 40%;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+        }
+
+        .customer {
+          width: 150px;
+          -webkit-transition: -webkit-filter 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
+          transition: -webkit-filter 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
+          -o-transition: filter 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
+          transition: filter 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
+          transition: filter 0.8s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-filter 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
+          -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+        }
+
+        .customer:hover {
+          cursor: pointer;
+          -webkit-transition: -webkit-filter 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
+          transition: -webkit-filter 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
+          -o-transition: filter 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
+          transition: filter 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
+          transition: filter 0.8s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-filter 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
+          -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+        }
+
+
     </style>
 
 </head>
@@ -630,6 +759,120 @@
                 </div>
                 <div class="services">
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrapperVignette">
+      <div class="vignetteFlex">
+        <div class="vignette">
+          <div class="imgVignette">
+            <img src="020.jpg"></img>
+          </div>
+          <div class="txtVignette">
+            <div class="titreVignette">Titre</div>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </div>
+          <div class="colorBarre"></div>
+
+        </div>
+        <div class="vignette">
+          <div class="imgVignette">
+            <img src="020.jpg"></img>
+          </div>
+          <div class="txtVignette">
+            <div class="titreVignette">Titre</div>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </div>
+          <div class="colorBarre"></div>
+        </div>
+        <div class="vignette">
+          <div class="imgVignette">
+            <img src="020.jpg"></img>
+          </div>
+          <div class="txtVignette">
+            <div class="titreVignette">Titre</div>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </div>
+          <div class="colorBarre"></div>
+
+        </div>
+        <div class="vignette">
+          <div class="imgVignette">
+            <img src="020.jpg"></img>
+          </div>
+          <div class="txtVignette">
+            <div class="titreVignette">Titre</div>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </div>
+          <div class="colorBarre"></div>
+
+        </div>
+      </div>
+    </div>
+    <div class="wrapperCustomers">
+      <div class="customersFlex">
+        <div class="customer">
+          <img src="atos.png"></img>
+        </div>
+        <div class="customer">
+          <img src="atos.png"></img>
+        </div>
+        <div class="customer">
+          <img src="atos.png"></img>
+        </div>
+      </div>
+      <div class="customersFlex" style="justify-content: space-evenly;">
+        <div class="customer">
+          <img src="atos.png"></img>
+        </div>
+        <div class="customer">
+          <img src="atos.png"></img>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer" style="margin-top: 10%;">
+        <div class="container-fluid" style="text-align: center;color: white;">
+            <div class="row">
+                <div class="col-sm-5"></div>
+                <div class="col-sm-2" style="height:1px;width:100%;border-top:1px solid white;"></div>
+                <div class="col-sm-5"></div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4"></div>
+                <div class="col-sm-4">
+                    <div class="well" style="margin-top: 10%;">
+                        <h3>Contactez-nous !</h3>
+                        <form role="form" id="contactForm" data-toggle="validator" class="shake">
+                            <div class="row">
+                                <div class="form-group col-sm-6">
+                                    <label for="name" class="h4">Name</label>
+                                    <input type="text" class="form-control" id="name" placeholder="Enter name" required data-error="NEW ERROR MESSAGE">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                                <div class="form-group col-sm-6">
+                                    <label for="email" class="h4">Email</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="message" class="h4 ">Message</label>
+                                <textarea id="message" class="form-control" rows="5" placeholder="Enter your message" required></textarea>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <button type="submit" id="form-submit" class="btn btn-success btn-lg pull-right ">Submit</button>
+                            <div id="msgSubmit" class="h3 text-center hidden"></div>
+                            <div class="clearfix"></div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-sm-4"></div>
             </div>
         </div>
     </div>
