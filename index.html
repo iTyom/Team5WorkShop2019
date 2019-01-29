@@ -46,7 +46,7 @@
 
         });
     </script>
-    
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <link rel="stylesheet" href="css/contact.css">
@@ -54,30 +54,30 @@
 
 
     <style>
-        
+
         @font-face {
            font-family: Biko;
            font-style: normal;
            src: url(Biko.otf);
-           
+
         }
-        
+
         body{
-            
+
             font-family: Biko;
         }
-        
+
         h1{
             margin-top: .5em;
             color: #FFF;
             text-decoration: underline;
             text-underline-position: under;
         }
-        
+
         h5{
             font-style: italic;
         }
-        
+
         .container {
             display: block;
         }
@@ -113,9 +113,9 @@
             padding-left: 1em;
             float: left;
             text-align: left;
-            
+
         }
-        
+
         .descriptionRight {
             display: inline-block;
             position: relative;
@@ -124,16 +124,16 @@
             padding-right: 1em;
             float : right;
             text-align: right;
-            
+
         }
-        
+
         .arround{
             display: block;
             width: 100%;
             height: 200px;
             margin-bottom: 1em;
         }
-        
+
         .barre {
             display: block;
             margin: 1em;
@@ -859,31 +859,27 @@
             <div class="row">
                 <div class="col-sm-4"></div>
                 <div class="col-sm-4">
-                    <div class="well" style="margin-top: 10%;">
-                        <h3>Contactez-nous !</h3>
-                        <form role="form" id="contactForm" data-toggle="validator" class="shake">
-                            <div class="row">
-                                <div class="form-group col-sm-6">
-                                    <label for="name" class="h4">Name</label>
-                                    <input type="text" class="form-control" id="name" placeholder="Enter name" required data-error="NEW ERROR MESSAGE">
-                                    <div class="help-block with-errors"></div>
-                                </div>
-                                <div class="form-group col-sm-6">
-                                    <label for="email" class="h4">Email</label>
-                                    <input type="email" class="form-control" id="email" placeholder="Enter email" required>
-                                    <div class="help-block with-errors"></div>
-                                </div>
+                    <section id="hire">
+                        <h1>Contact Me</h1>
+                        <form>
+                            <div class="field name-box">
+                                <input type="text" id="name" placeholder="Qui etes-vous ?"/>
+                                <label for="name">Name</label>
+                                <span class="ss-icon">check</span>
                             </div>
-                            <div class="form-group">
-                                <label for="message" class="h4 ">Message</label>
-                                <textarea id="message" class="form-control" rows="5" placeholder="Enter your message" required></textarea>
-                                <div class="help-block with-errors"></div>
+                            <div class="field email-box">
+                                <input type="text" id="email" placeholder="name@email.com"/>
+                                <label for="email">Email</label>
+                                <span class="ss-icon">check</span>
                             </div>
-                            <button type="submit" id="form-submit" class="btn btn-success btn-lg pull-right ">Submit</button>
-                            <div id="msgSubmit" class="h3 text-center hidden"></div>
-                            <div class="clearfix"></div>
+                            <div class="field msg-box">
+                                <textarea id="msg" rows="4" placeholder="Entrez votre message..."/></textarea>
+                                <label for="msg">Msg</label>
+                                <span class="ss-icon">check</span>
+                            </div>
+                            <input class="button" type="submit" value="Send" />
                         </form>
-                    </div>
+                    </section>
                 </div>
                 <div class="col-sm-4"></div>
             </div>
