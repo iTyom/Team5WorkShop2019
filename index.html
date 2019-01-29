@@ -74,7 +74,7 @@
             position: relative;
             color: #FFF;
         }
-        
+
         .arround{
             display: block;
             width: 100%;
@@ -467,6 +467,81 @@
             -o-animation-name: bounceInLeft;
             animation-name: bounceInLeft;
         }
+
+        .wrapperVignette {
+          display: flex;
+          height:410px;
+          width: 100%;
+          margin-top: 90px;
+        }
+
+        .vignetteFlex {
+          flex: 1;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+        }
+
+        .vignette {
+          width: 260px;
+          height: 350px;
+          background-color: black;
+          position: relative;
+          cursor: pointer;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+        }
+
+        /* .colorBarre {
+          width: 100%;
+          height: 3px;
+          background-color: yellow;
+          position: absolute;
+          bottom: 0px;
+          cursor: pointer;
+        } */
+
+        .imgVignette {
+          width: 100%;
+          height: 140px;
+          top: 0;
+          left: 0%;
+          height: 50%;
+          width: 100%;
+          background-size: 85% auto;
+          background-position: center center;
+          background-repeat: no-repeat;
+          -webkit-transition: -webkit-filter 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
+          transition: -webkit-filter 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
+          -o-transition: filter 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
+          transition: filter 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
+          transition: filter 0.8s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-filter 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
+          -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+        }
+
+        .imgVignette:hover {
+          -webkit-transition: -webkit-filter 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
+          transition: -webkit-filter 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
+          -o-transition: filter 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
+          transition: filter 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
+          transition: filter 0.8s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-filter 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
+          -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+        }
+
+        .txtVignette {
+          color: white;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 80%;
+          height: 100%;
+          text-align: center;
+        }
     </style>
 
 </head>
@@ -528,7 +603,7 @@
                             <div class="block animatable bounceInRight">Photo 8</div>
                         </div>
                     </div>
-                    
+
                 </div>
                 <div class="valeur">
                 </div>
@@ -540,6 +615,54 @@
                 </div>
             </div>
         </div>
+    </div>
+
+    <div class="wrapperVignette">
+      <div class="vignetteFlex">
+        <div class="vignette">
+          <div class="imgVignette">
+            <img src="020.jpg"></img>
+          </div>
+          <div class="txtVignette">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </div>
+          <div class="colorBarre"></div>
+
+        </div>
+        <div class="vignette">
+          <div class="imgVignette">
+            <img src="020.jpg"></img>
+          </div>
+          <div class="txtVignette">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </div>
+          <div class="colorBarre"></div>
+        </div>
+        <div class="vignette">
+          <div class="imgVignette">
+            <img src="020.jpg"></img>
+          </div>
+          <div class="txtVignette">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </div>
+          <div class="colorBarre"></div>
+
+        </div>
+        <div class="vignette">
+          <div class="imgVignette">
+            <img src="020.jpg"></img>
+          </div>
+          <div class="txtVignette">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </div>
+          <div class="colorBarre"></div>
+
+        </div>
+      </div>
     </div>
 
 </body>
